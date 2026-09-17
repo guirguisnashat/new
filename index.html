@@ -3,10 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Guirguis Nashat Zaki — Software Developer Portfolio</title>
-<meta name="description" content="Full-stack developer building SaaS platforms, mobile apps, and WordPress solutions.">
-<link rel="icon" href="data:,">
-<link rel="stylesheet" href="style.css?v=3">
+<title>Guirguis Nashat Zaki — Software Engineer Portfolio</title>
+<meta name="description" content="Flutter &amp; mobile developer with 3+ years shipping production apps (1,000–5,000+ active users) across React Native, Flutter, and native Android.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Guirguis Nashat Zaki — Software Engineer">
+<meta property="og:description" content="Flutter & mobile developer with 3+ years shipping production apps across React Native, Flutter, and native Android.">
+<meta property="og:image" content="profile.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Guirguis Nashat Zaki — Software Engineer">
+<meta name="twitter:description" content="Flutter & mobile developer with 3+ years shipping production apps across React Native, Flutter, and native Android.">
+<meta name="twitter:image" content="profile.jpg">
+
+<link rel="stylesheet" href="style.css?v=7">
 </head>
 <body>
 
@@ -14,6 +24,7 @@
   <div class="nav-inner">
     <span class="logo">Guirguis&nbsp;Nashat</span>
     <nav>
+      <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
@@ -23,8 +34,9 @@
 </header>
 
 <section class="hero">
-  <div class="hero-inner">
-    <p class="eyebrow">Full-Stack Developer</p>
+  <div class="hero-inner hero-anim">
+    <img class="avatar" src="profile.jpg" alt="Guirguis Nashat Zaki">
+    <p class="eyebrow">Software Engineer</p>
     <h1>I build SaaS platforms, mobile apps, and the systems that connect them.</h1>
     <p class="hero-sub">From multi-tenant backends to React Native apps and WordPress integrations — I design and ship end-to-end products.</p>
     <div class="hero-actions">
@@ -35,11 +47,29 @@
   </div>
 </section>
 
+<section id="about" class="section">
+  <h2 class="reveal">About Me</h2>
+  <p class="about-text reveal">Mobile developer with 3+ years building production Flutter and native Android apps reaching 1,000&ndash;5,000+ active users with 4.5+ star ratings. Experienced across the full app lifecycle: Clean Architecture with Provider/Bloc/Cubit state management, REST API integration, Firebase backends, push notifications, crash reporting, deep links, and GPS/background services. My native Android background adds depth in real-time messaging and background task orchestration. I'm comfortable owning a feature end-to-end and coordinating with backend and design teams &mdash; and as a native Arabic speaker, I bring direct experience building for the Egypt/MENA market, including RTL-aware UI.</p>
+
+  <div class="about-grid">
+    <div class="about-card reveal">
+      <h4>Education</h4>
+      <p><strong>Bachelor's Degree, Computer &amp; Communication Engineering</strong><br>Alexandria University</p>
+      <p class="about-meta">Graduation Project: Medication Detection App (Flutter) &mdash; Grade: A</p>
+    </div>
+    <div class="about-card reveal">
+      <h4>Languages</h4>
+      <p>Arabic &mdash; Native Speaker</p>
+      <p>English &mdash; Proficient</p>
+    </div>
+  </div>
+</section>
+
 <section id="projects" class="section">
-  <h2>Projects</h2>
+  <h2 class="reveal">Projects</h2>
   <div class="grid">
 
-    <article class="card">
+    <article class="card reveal">
       <div class="card-tag">SaaS Platform</div>
       <h3>MLS Real Estate Platform</h3>
       <p>Multi-tenant SaaS for real estate brokerages — listing management, CRM, transactions, and e-signing, spanning four coordinated codebases. In active development at Inventors Incubators.</p>
@@ -50,9 +80,10 @@
         <li>WordPress billing/marketing site</li>
       </ul>
       <p class="card-detail">80+ database entities, JWT auth with role/permission guards, Stripe/PayPal/UniBee billing, Odoo ERP integration, in-app payment flows via deep links, and a HMAC-signed handoff between the WordPress billing site and the backend.</p>
+      <a class="card-link" href="https://github.com/guirguisnashat" target="_blank" rel="noopener">View on GitHub &rarr;</a>
     </article>
 
-    <article class="card">
+    <article class="card reveal">
       <div class="card-tag">Mobile + Backend</div>
       <h3>Geofencing HR Attendance System</h3>
       <p>An HR system where employees automatically clock in and out based on GPS presence inside a manager-drawn geofence zone. Complete and ready to launch — currently in sale negotiations.</p>
@@ -62,9 +93,10 @@
         <li>Ray-casting geofence algorithm</li>
       </ul>
       <p class="card-detail">Polygon-based zones (not just circles), live employee location map, JWT-authenticated REST API, and a daily cron job that auto-marks absences.</p>
+      <a class="card-link" href="https://github.com/guirguisnashat" target="_blank" rel="noopener">View on GitHub &rarr;</a>
     </article>
 
-    <article class="card">
+    <article class="card reveal">
       <div class="card-tag">Mobile</div>
       <h3>Psychology Booking App</h3>
       <p>A Vezeeta-style appointment booking app built solo, end-to-end, for a confidential client.</p>
@@ -73,9 +105,10 @@
         <li>Firebase real-time listeners</li>
       </ul>
       <p class="card-detail">Doctor/psychologist search, scheduling, real-time slot availability, and live booking confirmation updates.</p>
+      <span class="card-link card-link-disabled">Confidential Client Project</span>
     </article>
 
-    <article class="card">
+    <article class="card reveal">
       <div class="card-tag">Mobile</div>
       <h3>Flutter Drawing App</h3>
       <p>A freelance canvas-drawing app with offline-first local persistence, built for a confidential client.</p>
@@ -85,16 +118,17 @@
         <li>Arabic/English localization (RTL/LTR)</li>
       </ul>
       <p class="card-detail">Geometric computing for canvas drawing logic (shape rendering, path/coordinate math, transformations), screenshot prevention to protect user content, and an integrated in-app media player.</p>
+      <span class="card-link card-link-disabled">Confidential Client Project</span>
     </article>
 
   </div>
 </section>
 
 <section id="experience" class="section section-alt">
-  <h2>Work Experience</h2>
+  <h2 class="reveal">Work Experience</h2>
   <div class="timeline">
 
-    <article class="job">
+    <article class="job reveal">
       <div class="job-head">
         <h3>Software Engineer</h3>
         <span class="job-date">03/2026 – Present</span>
@@ -109,7 +143,7 @@
       </ul>
     </article>
 
-    <article class="job">
+    <article class="job reveal">
       <div class="job-head">
         <h3>Flutter Developer</h3>
         <span class="job-date">09/2023 – 09/2024</span>
@@ -123,7 +157,7 @@
       </ul>
     </article>
 
-    <article class="job">
+    <article class="job reveal">
       <div class="job-head">
         <h3>Software Engineer (Android)</h3>
         <span class="job-date">06/2022 – 06/2023</span>
@@ -141,9 +175,9 @@
 </section>
 
 <section id="skills" class="section">
-  <h2>Skills</h2>
+  <h2 class="reveal">Skills</h2>
   <div class="skills-grid">
-    <div class="skill-group">
+    <div class="skill-group reveal">
       <h4>Flutter &amp; Architecture</h4>
       <ul class="skill-tags">
         <li>Dart</li>
@@ -154,7 +188,7 @@
         <li>Clean state separation</li>
       </ul>
     </div>
-    <div class="skill-group">
+    <div class="skill-group reveal">
       <h4>APIs &amp; Data</h4>
       <ul class="skill-tags">
         <li>REST APIs</li>
@@ -164,7 +198,7 @@
         <li>Local caching &amp; offline-first</li>
       </ul>
     </div>
-    <div class="skill-group">
+    <div class="skill-group reveal">
       <h4>Notifications &amp; Reliability</h4>
       <ul class="skill-tags">
         <li>Push Notifications (FCM)</li>
@@ -172,7 +206,7 @@
         <li>Background tasks (WorkManager)</li>
       </ul>
     </div>
-    <div class="skill-group">
+    <div class="skill-group reveal">
       <h4>Real-time &amp; Media</h4>
       <ul class="skill-tags">
         <li>Real-time messaging (Sendbird)</li>
@@ -180,14 +214,14 @@
         <li>Deep links</li>
       </ul>
     </div>
-    <div class="skill-group">
+    <div class="skill-group reveal">
       <h4>UI Implementation</h4>
       <ul class="skill-tags">
         <li>Figma-to-code</li>
         <li>Pixel-accurate, responsive UI</li>
       </ul>
     </div>
-    <div class="skill-group">
+    <div class="skill-group reveal">
       <h4>Localization</h4>
       <ul class="skill-tags">
         <li>RTL &amp; Arabic UI</li>
@@ -195,7 +229,7 @@
         <li>MENA-market apps</li>
       </ul>
     </div>
-    <div class="skill-group">
+    <div class="skill-group reveal">
       <h4>Release &amp; Tooling</h4>
       <ul class="skill-tags">
         <li>Git</li>
@@ -206,7 +240,7 @@
         <li>Agile / Scrum</li>
       </ul>
     </div>
-    <div class="skill-group">
+    <div class="skill-group reveal">
       <h4>Team &amp; Mentorship</h4>
       <ul class="skill-tags">
         <li>Code review</li>
@@ -218,7 +252,7 @@
 </section>
 
 <section id="contact" class="section contact">
-  <h2>Get in Touch</h2>
+  <h2 class="reveal">Get in Touch</h2>
   <p>Open to new opportunities and collaborations.</p>
   <a class="btn btn-primary" href="mailto:guirguisnashatzakisoliman@gmail.com">guirguisnashatzakisoliman@gmail.com</a>
   <p class="contact-meta">Egypt &nbsp;·&nbsp; +20 127 360 9137 &nbsp;·&nbsp; +20 109 346 5335</p>
@@ -233,6 +267,26 @@
 <footer>
   <p>&copy; 2026 Guirguis Nashat Zaki. Built and deployed with care.</p>
 </footer>
+
+<script>
+  const revealEls = document.querySelectorAll('.reveal');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (reduceMotion || !('IntersectionObserver' in window)) {
+    revealEls.forEach(el => el.classList.add('is-visible'));
+  } else {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('is-visible'), i * 60);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+    revealEls.forEach(el => observer.observe(el));
+  }
+</script>
 
 </body>
 </html>
