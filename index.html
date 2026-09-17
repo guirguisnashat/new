@@ -6,7 +6,7 @@
 <title>Guirguis Nashat Zaki — Software Developer Portfolio</title>
 <meta name="description" content="Full-stack developer building SaaS platforms, mobile apps, and WordPress solutions.">
 <link rel="icon" href="data:,">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 
@@ -15,6 +15,7 @@
     <span class="logo">Guirguis&nbsp;Nashat</span>
     <nav>
       <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -41,23 +42,23 @@
     <article class="card">
       <div class="card-tag">SaaS Platform</div>
       <h3>MLS Real Estate Platform</h3>
-      <p>Multi-tenant SaaS for real estate brokerages — listing management, CRM, transactions, and e-signing, spanning four coordinated codebases.</p>
+      <p>Multi-tenant SaaS for real estate brokerages — listing management, CRM, transactions, and e-signing, spanning four coordinated codebases. In active development at Inventors Incubators.</p>
       <ul class="tech-list">
         <li>NestJS + PostgreSQL</li>
         <li>Next.js 16 + React 19</li>
         <li>React Native mobile app</li>
         <li>WordPress billing/marketing site</li>
       </ul>
-      <p class="card-detail">80+ database entities, JWT auth with role/permission guards, Stripe/PayPal/UniBee billing, Odoo ERP integration, and a HMAC-signed handoff between the WordPress billing site and the backend.</p>
+      <p class="card-detail">80+ database entities, JWT auth with role/permission guards, Stripe/PayPal/UniBee billing, Odoo ERP integration, in-app payment flows via deep links, and a HMAC-signed handoff between the WordPress billing site and the backend.</p>
     </article>
 
     <article class="card">
       <div class="card-tag">Mobile + Backend</div>
       <h3>Geofencing HR Attendance System</h3>
-      <p>An HR system where employees automatically clock in and out based on GPS presence inside a manager-drawn geofence zone.</p>
+      <p>An HR system where employees automatically clock in and out based on GPS presence inside a manager-drawn geofence zone. Complete and ready to launch — currently in sale negotiations.</p>
       <ul class="tech-list">
         <li>Flutter (employee + manager apps)</li>
-        <li>Node.js / Express + PostgreSQL</li>
+        <li>Next.js API + React admin dashboard</li>
         <li>Ray-casting geofence algorithm</li>
       </ul>
       <p class="card-detail">Polygon-based zones (not just circles), live employee location map, JWT-authenticated REST API, and a daily cron job that auto-marks absences.</p>
@@ -65,37 +66,153 @@
 
     <article class="card">
       <div class="card-tag">Mobile</div>
-      <h3>Cross-Platform Auth &amp; App Client</h3>
-      <p>React Native client powering the MLS platform's mobile experience — 27 screens behind a single internal router to keep navigation state predictable.</p>
+      <h3>Psychology Booking App</h3>
+      <p>A Vezeeta-style appointment booking app built solo, end-to-end, for a confidential client.</p>
       <ul class="tech-list">
-        <li>React Native 0.85 + TypeScript</li>
-        <li>React Navigation v7</li>
-        <li>Auto-refreshing JWT sessions</li>
+        <li>Flutter</li>
+        <li>Firebase real-time listeners</li>
       </ul>
-      <p class="card-detail">Custom input-safety checks on every user string, resilient auth-refresh-and-retry pattern, and a 7-step registration wizard driven by local state.</p>
+      <p class="card-detail">Doctor/psychologist search, scheduling, real-time slot availability, and live booking confirmation updates.</p>
+    </article>
+
+    <article class="card">
+      <div class="card-tag">Mobile</div>
+      <h3>Flutter Drawing App</h3>
+      <p>A freelance canvas-drawing app with offline-first local persistence, built for a confidential client.</p>
+      <ul class="tech-list">
+        <li>Flutter + Provider</li>
+        <li>SQLite (sqflite) + Hive</li>
+        <li>Arabic/English localization (RTL/LTR)</li>
+      </ul>
+      <p class="card-detail">Geometric computing for canvas drawing logic (shape rendering, path/coordinate math, transformations), screenshot prevention to protect user content, and an integrated in-app media player.</p>
     </article>
 
   </div>
 </section>
 
-<section id="skills" class="section section-alt">
+<section id="experience" class="section section-alt">
+  <h2>Work Experience</h2>
+  <div class="timeline">
+
+    <article class="job">
+      <div class="job-head">
+        <h3>Software Engineer</h3>
+        <span class="job-date">03/2026 – Present</span>
+      </div>
+      <p class="job-company">Inventors Incubators &middot; Alexandria, Egypt</p>
+      <ul>
+        <li>Build mobile apps in React Native, applying the same declarative-UI and state-management discipline used in Flutter, cutting development time by 40%</li>
+        <li>Build backend REST APIs with Node.js supporting 10,000+ daily users at 99.9% uptime</li>
+        <li>Manage CI/CD pipelines using Coolify for automated builds and deployments</li>
+        <li>Review code from junior developers and assign/scope their tasks, coordinating via ClickUp</li>
+        <li>Use AI coding tools (Claude Code) to accelerate development and code review</li>
+      </ul>
+    </article>
+
+    <article class="job">
+      <div class="job-head">
+        <h3>Flutter Developer</h3>
+        <span class="job-date">09/2023 – 09/2024</span>
+      </div>
+      <p class="job-company">ItSpark &middot; Alexandria, Egypt</p>
+      <ul>
+        <li>Built and shipped Flutter apps on Firebase, reaching 1,000+ active users</li>
+        <li>Implemented pixel-accurate, responsive UI from Figma designs across app screens</li>
+        <li>Applied Provider, Bloc, and Cubit for state management, cutting load time by 30%</li>
+        <li>Designed and built a full healthcare appointment booking platform end-to-end — search, scheduling, real-time slot availability, and booking confirmation flows</li>
+      </ul>
+    </article>
+
+    <article class="job">
+      <div class="job-head">
+        <h3>Software Engineer (Android)</h3>
+        <span class="job-date">06/2022 – 06/2023</span>
+      </div>
+      <p class="job-company">Enozom &middot; Alexandria, Egypt</p>
+      <ul>
+        <li>Built native Android apps in Kotlin, reaching a 4.5+ star rating with 5,000+ downloads</li>
+        <li>Integrated Sendbird for real-time messaging — live delivery/read status, notifications, and link previews</li>
+        <li>Handled Play Store release process, including build preparation and store submission</li>
+        <li>Implemented push notifications and optimized background task management with WorkManager, improving battery efficiency by 25%</li>
+      </ul>
+    </article>
+
+  </div>
+</section>
+
+<section id="skills" class="section">
   <h2>Skills</h2>
   <div class="skills-grid">
     <div class="skill-group">
-      <h4>Backend</h4>
-      <p>Node.js, NestJS, Express, PostgreSQL, TypeORM, REST API design, JWT auth &amp; RBAC</p>
+      <h4>Flutter &amp; Architecture</h4>
+      <ul class="skill-tags">
+        <li>Dart</li>
+        <li>Provider</li>
+        <li>Bloc</li>
+        <li>Cubit</li>
+        <li>Layered / Repository architecture</li>
+        <li>Clean state separation</li>
+      </ul>
     </div>
     <div class="skill-group">
-      <h4>Frontend</h4>
-      <p>React, Next.js, TypeScript, Tailwind CSS, TanStack Query</p>
+      <h4>APIs &amp; Data</h4>
+      <ul class="skill-tags">
+        <li>REST APIs</li>
+        <li>Authentication</li>
+        <li>Firebase / Firestore</li>
+        <li>Hive</li>
+        <li>Local caching &amp; offline-first</li>
+      </ul>
     </div>
     <div class="skill-group">
-      <h4>Mobile</h4>
-      <p>React Native, Flutter, React Navigation, offline-first patterns</p>
+      <h4>Notifications &amp; Reliability</h4>
+      <ul class="skill-tags">
+        <li>Push Notifications (FCM)</li>
+        <li>Crash Reporting &amp; Analytics (Crashlytics)</li>
+        <li>Background tasks (WorkManager)</li>
+      </ul>
     </div>
     <div class="skill-group">
-      <h4>Platform &amp; Ops</h4>
-      <p>WordPress (block themes, plugins, REST API), Stripe/PayPal billing, CI deployment</p>
+      <h4>Real-time &amp; Media</h4>
+      <ul class="skill-tags">
+        <li>Real-time messaging (Sendbird)</li>
+        <li>Delivery / read status, live updates</li>
+        <li>Deep links</li>
+      </ul>
+    </div>
+    <div class="skill-group">
+      <h4>UI Implementation</h4>
+      <ul class="skill-tags">
+        <li>Figma-to-code</li>
+        <li>Pixel-accurate, responsive UI</li>
+      </ul>
+    </div>
+    <div class="skill-group">
+      <h4>Localization</h4>
+      <ul class="skill-tags">
+        <li>RTL &amp; Arabic UI</li>
+        <li>Native Arabic speaker</li>
+        <li>MENA-market apps</li>
+      </ul>
+    </div>
+    <div class="skill-group">
+      <h4>Release &amp; Tooling</h4>
+      <ul class="skill-tags">
+        <li>Git</li>
+        <li>CI/CD (Coolify)</li>
+        <li>Jira</li>
+        <li>ClickUp</li>
+        <li>App Store / Play Store release</li>
+        <li>Agile / Scrum</li>
+      </ul>
+    </div>
+    <div class="skill-group">
+      <h4>Team &amp; Mentorship</h4>
+      <ul class="skill-tags">
+        <li>Code review</li>
+        <li>Task scoping for junior developers</li>
+        <li>Cross-team coordination</li>
+      </ul>
     </div>
   </div>
 </section>
