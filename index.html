@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inventors-3 — Software Developer Portfolio</title>
+<meta name="description" content="Full-stack developer building SaaS platforms, mobile apps, and WordPress solutions.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <span class="logo">Inventors&#8209;3</span>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Full-Stack Developer</p>
+    <h1>I build SaaS platforms, mobile apps, and the systems that connect them.</h1>
+    <p class="hero-sub">From multi-tenant backends to React Native apps and WordPress integrations — I design and ship end-to-end products.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#projects">View Projects</a>
+      <a class="btn btn-secondary" href="#contact">Get in Touch</a>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <h2>Projects</h2>
+  <div class="grid">
+
+    <article class="card">
+      <div class="card-tag">SaaS Platform</div>
+      <h3>MLS Real Estate Platform</h3>
+      <p>Multi-tenant SaaS for real estate brokerages — listing management, CRM, transactions, and e-signing, spanning four coordinated codebases.</p>
+      <ul class="tech-list">
+        <li>NestJS + PostgreSQL</li>
+        <li>Next.js 16 + React 19</li>
+        <li>React Native mobile app</li>
+        <li>WordPress billing/marketing site</li>
+      </ul>
+      <p class="card-detail">80+ database entities, JWT auth with role/permission guards, Stripe/PayPal/UniBee billing, Odoo ERP integration, and a HMAC-signed handoff between the WordPress billing site and the backend.</p>
+    </article>
+
+    <article class="card">
+      <div class="card-tag">Mobile + Backend</div>
+      <h3>Geofencing HR Attendance System</h3>
+      <p>An HR system where employees automatically clock in and out based on GPS presence inside a manager-drawn geofence zone.</p>
+      <ul class="tech-list">
+        <li>Flutter (employee + manager apps)</li>
+        <li>Node.js / Express + PostgreSQL</li>
+        <li>Ray-casting geofence algorithm</li>
+      </ul>
+      <p class="card-detail">Polygon-based zones (not just circles), live employee location map, JWT-authenticated REST API, and a daily cron job that auto-marks absences.</p>
+    </article>
+
+    <article class="card">
+      <div class="card-tag">Mobile</div>
+      <h3>Cross-Platform Auth &amp; App Client</h3>
+      <p>React Native client powering the MLS platform's mobile experience — 27 screens behind a single internal router to keep navigation state predictable.</p>
+      <ul class="tech-list">
+        <li>React Native 0.85 + TypeScript</li>
+        <li>React Navigation v7</li>
+        <li>Auto-refreshing JWT sessions</li>
+      </ul>
+      <p class="card-detail">Custom input-safety checks on every user string, resilient auth-refresh-and-retry pattern, and a 7-step registration wizard driven by local state.</p>
+    </article>
+
+  </div>
+</section>
+
+<section id="skills" class="section section-alt">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-group">
+      <h4>Backend</h4>
+      <p>Node.js, NestJS, Express, PostgreSQL, TypeORM, REST API design, JWT auth &amp; RBAC</p>
+    </div>
+    <div class="skill-group">
+      <h4>Frontend</h4>
+      <p>React, Next.js, TypeScript, Tailwind CSS, TanStack Query</p>
+    </div>
+    <div class="skill-group">
+      <h4>Mobile</h4>
+      <p>React Native, Flutter, React Navigation, offline-first patterns</p>
+    </div>
+    <div class="skill-group">
+      <h4>Platform &amp; Ops</h4>
+      <p>WordPress (block themes, plugins, REST API), Stripe/PayPal billing, CI deployment</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section contact">
+  <h2>Get in Touch</h2>
+  <p>Open to new opportunities and collaborations.</p>
+  <a class="btn btn-primary" href="mailto:inventors.incubator1@gmail.com">inventors.incubator1@gmail.com</a>
+  <div class="contact-links">
+    <a href="https://github.com/Inventors-3" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 Inventors-3. Built and deployed with care.</p>
+</footer>
+
+</body>
+</html>
